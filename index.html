@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsive, que se adapta a los dispositivos-->
     <title>Mi Primer Sitio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,9 +18,10 @@
     </nav>
     <main>
         <section id="inicio">
-            <h2>Inicio</h2>
+            <h2>Mi perfil</h2>
             <p>Bienvenidos</p>
-                <img src="perfil.jpg" alt="flores">
+            <p>Vas a encontar cosas sobre mi vida, como mis intereses durante el transcurso de mi vida. Ire agregando más cosas a medida que pasa el tiempo.</p>
+                <img src="perfil.jpg" alt="perro en el cielo y asomandose por una montaña">
         </section>
         <section id="intereses">
             <h2>Intereses</h2>
@@ -30,14 +31,21 @@
                 <li>CSS</li>
                 <img src="logos.jpg" alt="logos">
             </ul>
-            <p>Si quieres aprender, visita:
-                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>
+            <p>Una pequeña ayuda:
+                <a href="https://youtu.be/3yM5uXp-T_0?si=2yj6vZVRT90q-2yh" target="_blank">Aprende CSS</a>
             </p>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Email: antotintilay6@gmail.com</p>
-            <p>Instagram:</p>
+            <form>
+                <label for="">Nombre</label>
+                <input id="iname" type="text" name="name">
+                <label for="">Telefono</label>
+                <input id="itelefono" type="number" name="telefono">
+                <label for="">Email</label>
+                <input id="iemail" type="email" name="email">
+                <button type="submit" value="enviar">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>

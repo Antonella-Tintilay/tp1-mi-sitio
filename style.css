@@ -5,25 +5,25 @@
 }
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 1rem; /*cambia el tamaño de las letras, como un zoom*/
     line-height: 1,6;
     color: #222;
 }
 header {
     background-color: #333;
-    color:white;
+    color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem; /*distacia entre los margenes*/
 }
 nav {
-    background-color: #b03ed5;
+    background-color: #72d5f9;
     padding: 1rem;
     text-align: center;
 }
 nav a {
     color: white;
     text-decoration: none;
-    margin: 2rem;
+    margin: 2rem; /*la separcion estre los textos*/
     transition: 0,3s;
 }
 nav a:hover {
@@ -34,7 +34,7 @@ footer {
     color: white;
 }
 main {
-    max-width: white;
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -45,12 +45,15 @@ section {
     margin-bottom: 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0,1);
 }
-o1 {
-    padding-left: 2rem;
+ul {
+    padding-left: 1rem;
     margin-bottom: 1rem;
 }
 img {
     width: 200px;
     height: auto;
     margin:10px;
+}
+.form-container{
+
 }
