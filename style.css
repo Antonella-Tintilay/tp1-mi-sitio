@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem; /*cambia el tamaño de las letras, como un zoom*/
+    font-size: 1rem;
     line-height: 1,6;
     color: #222;
 }
@@ -13,7 +13,7 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 2rem; /*distacia entre los margenes*/
+    padding: 2rem;
 }
 nav {
     background-color: #72d5f9;
@@ -23,7 +23,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 2rem; /*la separcion estre los textos*/
+    margin: 2rem;
     transition: 0,3s;
 }
 nav a:hover {
