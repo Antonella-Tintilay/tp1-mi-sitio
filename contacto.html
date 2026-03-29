@@ -55,12 +55,22 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <form>
-                <label for="">Nombre</label>
-                <input id="iname" type="text" name="name">
-                <label for="">Telefono</label>
-                <input id="itelefono" type="number" name="telefono">
-                <label for="">Email</label>
-                <input id="iemail" type="email" name="email">
+                <label for="iname">Nombre: </label>
+                <input id="iname" type="text" name="name" placeholder="Ingrese su nombre" required minlength="3"><br>
+                <label for="itelefono">Telefono: </label>
+                <input id="itelefono" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Ingrese su número" required><br>
+                <label for="iemail">Email: </label>
+                <input id="iemail" type="email" name="email"placeholder="Ingrese su@email.com" required><br>
+                <label for="imensaje">Mensaje: </label>
+                <textarea id="imensaje" name="mensaje" required minlength="10"></textarea><br>
+                <label for="imotivo">Motivo</label>
+                <select id="imotivo" name="motivo" required>
+                    <option value="" disabled selected>opción</option>
+                    <option value="consulta">consulta</option>
+                    <option value="sugerencia">sugerencia</option>
+                    <option value="otro">otro</option>
+                </select><br>
+                <label for="iterminos"><input type="checkbox" id="iterminos" name="terminos" required>Acepto los terminos</label><br>
                 <button type="submit" value="enviar">Enviar</button>
             </form>
         </section>
