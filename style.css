@@ -96,3 +96,6 @@ button[type="submit"]{
 button:active{
     transform: translateY(2px);
 }
+#intereses h3, #curiosidades h3{
+    color: rgba(6, 52, 104, 0.705)
+}
