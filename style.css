@@ -85,3 +85,6 @@ input[type="checkbox"]{
     margin-right:5px;
     margin-top: 10px;
 }
+#intereses h3, #curiosidades h3{
+    color: rgba(6, 52, 104, 0.705)
+}
