@@ -84,6 +84,7 @@ input[type="checkbox"]{
     height: 16px;
     margin-right:5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 button[type="submit"]{
     background-color: #1139a8;
