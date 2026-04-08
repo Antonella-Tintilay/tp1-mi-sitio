@@ -1,23 +1,32 @@
+:root {
+    --color-primary: #2f3e46;
+    --color-secondary: #354f52;
+    --color-text: #121010;
+    --color-bg: #cad2c5;
+    --radius: 8px;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --font-main: 'Times New Roman', Times, serif;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: borde-box;
 }
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font-main);
     font-size: 1rem;
     line-height: 1.6;
-    color: #222;
-    background-color: rgba(211, 252, 252, 0.959);
+    color: var(--color-text);
+    background-color: var(--color-bg);
 }
 header {
-    background-color: #333;
+    background-color: var(--color-primary);
     color: white;
     text-align: center;
     padding: 2rem;
 }
 nav {
-    background-color: #0e516a;
+    background-color: var(--color-secondary);
     padding: 1rem;
     text-align: center;
 }
@@ -31,7 +40,7 @@ nav a:hover {
     color: orange;
 }
 footer {
-    background-color: #333;
+    background-color: var(--color-primary);
     color: white;
     text-align:center;
     padding: 5px;
@@ -43,10 +52,10 @@ main {
 }
 section {
     background-color: white;
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
     flex: 1;
 }
 ul {
