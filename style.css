@@ -3,14 +3,18 @@
     --color-secondary: #354f52;
     --color-text: #121010;
     --color-bg: #cad2c5;
+    --color-whitetext:#ffffff;
+    --color-hover:#f1803f;
+    --background-color-section:#ffffff;
     --radius: 8px;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    --font-main: 'Times New Roman', Times, serif;
+    --font-main:"Inter", "Segoe UI", Arial, sans-serif;
+    --font-title:"Montserrat", "Times New Roman", Times, serif;
 }
 * {
     margin: 0;
     padding: 0;
-    box-sizing: borde-box;
+    box-sizing: border-box;
 }
 body {
     font-family: var(--font-main);
@@ -19,9 +23,21 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
 }
+h1{
+    font-family:var(--font-title);
+    font-size: 2.5rem;
+}
+h2{
+    font-family:var(--font-title);
+    font-size: 1.8rem;
+}
+h3{
+    font-family:var(--font-title);
+    font-size: 1.3rem;
+}
 header {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-whitetext);
     text-align: center;
     padding: 2rem;
 }
@@ -31,17 +47,17 @@ nav {
     text-align: center;
 }
 nav a {
-    color: white;
+    color: var(--color-whitetext);
     text-decoration: none;
     margin: 2rem;
     transition: 0.3s;
 }
 nav a:hover {
-    color: orange;
+    color: var(--color-hover);
 }
 footer {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-whitetext);
     text-align:center;
     padding: 5px;
 }
@@ -51,7 +67,7 @@ main {
     padding: 2rem;
 }
 section {
-    background-color: white;
+    background-color: var(--background-color-section);
     border-radius: var(--radius);
     padding: 2rem;
     margin-bottom: 2rem;
@@ -67,6 +83,21 @@ img {
     height: auto;
     margin:10px;
 }
+input, textarea, select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+input:focus{
+    border:2px solid #1139a8;
+    box-shadow: 0 0 4px skyblue;
+    outline: none;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
 input:valid{
     border: 2px solid #16A34A;
     background-color:#F0FFF4;
@@ -74,19 +105,6 @@ input:valid{
 input:invalid:not(:placeholder-shown){
     border:2px solid #DC2626;
     background-color: #FEF2F2;
-}
-input:focus{
-    border:#1139a8;
-    box-shadow: 0 0 4px skyblue;
-}
-label{
-    display: block;
-    margin-bottom: 5px;
-}
-input, textarea, select{
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
 }
 input[type="checkbox"]{
     width:20px;
