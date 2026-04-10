@@ -4,7 +4,7 @@
     --color-text: #121010;
     --color-bg: #cad2c5;
     --color-whitetext:#ffffff;
-    --color-hover:#f1803f;
+    --color-accent:#f1803f;
     --background-color-section:#ffffff;
     --radius: 8px;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -36,24 +36,26 @@ h3{
     font-size: 1.3rem;
 }
 header {
-    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secondary);
     color: var(--color-whitetext);
-    text-align: center;
     padding: 2rem;
+    flex-wrap:wrap;
 }
 nav {
-    background-color: var(--color-secondary);
-    padding: 1rem;
-    text-align: center;
+    display: flex;  
 }
 nav a {
+    
     color: var(--color-whitetext);
     text-decoration: none;
     margin: 2rem;
     transition: 0.3s;
 }
 nav a:hover {
-    color: var(--color-hover);
+    color: var(--color-accent);
 }
 footer {
     background-color: var(--color-primary);
@@ -124,6 +126,23 @@ button[type="submit"]{
 button:active{
     transform: translateY(2px);
 }
-#intereses h3, #curiosidades h3{
+#intereses h3, #datos h3{
     color: rgba(6, 52, 104, 0.705)
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 2rem;
+}
+.card{
+    flex: 1 1 280px;
+    border: 2px solid #121010;
+    border-radius: var(--radius);
+    transition: 0.3s;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+.card:hover{
+    transform: translateY(-4px);
 }
