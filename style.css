@@ -51,7 +51,7 @@ header{grid-area: header;}
 
 aside{ grid-area:sidebar;
     background-color: #f8fafc;
-    padding: 1.5rem;
+    padding: 20px;
     border-right: 1px solid #d1d5db;
 }
 aside a{
