@@ -48,7 +48,24 @@ h3{
 }
 
 header{grid-area: header;}
-aside{ grid-area:sidebar;}
+
+aside{ grid-area:sidebar;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-right: 1px solid #d1d5db;
+}
+aside a{
+    display:block;
+    margin: 12px 0;
+    text-decoration: none;
+    color: #0c4a6e;
+    font-weight: 500;
+    transition: 0.3s;
+}
+aside a:hover{
+    transform: translateX(4px)
+}
+
 main{grid-area:main;}
 footer{grid-area:footer;}
 
