@@ -146,3 +146,26 @@ button:active{
 .card:hover{
     transform: translateY(-4px);
 }
+#hero{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 80vh;
+    background: linear-gradient(to right, #f0f9ff,#0c4a6e);
+    color:white;
+    flex-direction:column;
+    text-align: center;
+}
+.cta{
+    text-decoration: none;
+    color:#ffffff;
+    background: linear-gradient(135deg, #5497c4, #675db2);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.cta:hover{
+    transform: translateY(-2px);
+}
