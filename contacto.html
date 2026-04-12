@@ -9,46 +9,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Antonella Tintilay Raquel</h1>
-        <p>Estudiante de la Ternicatura superior en analisis de sistema y desarrollo de software</p>
-    </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="index.html">Intereses</a>
-        <a href="#">Contacto</a>
-        <a href="index.html">Curiosidades</a>
-        <a href="index.html">Proyectos</a>
-    </nav>
-    <main>
-        
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form>
-                <label for="iname">Nombre: </label>
-                <input id="iname" type="text" name="name" placeholder="Ingrese su nombre" required minlength="3"><br>
-                <label for="itelefono">Telefono: </label>
-                <input id="itelefono" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Ingrese su número" required><br>
-                <label for="iemail">Email: </label>
-                <input id="iemail" type="email" name="email"placeholder="Ingrese su@email.com" required><br>
-                <label for="imensaje">Mensaje: </label>
-                <textarea id="imensaje" name="mensaje" required minlength="10"></textarea><br>
-                <label for="imotivo">Motivo</label>
-                <select id="imotivo" name="motivo" required>
-                    <option value="" disabled selected>opción</option>
-                    <option value="consulta">consulta</option>
-                    <option value="sugerencia">sugerencia</option>
-                    <option value="otro">otro</option>
-                </select><br>
-                <label for="iterminos"><input type="checkbox" id="iterminos" name="terminos" required>Acepto los terminos</label><br>
-                <button type="submit" value="enviar">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Anto Tintilay</p>
-        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-    </footer>
+    <div class="layout">
+        <header>
+            <div>
+                <h1>Antonella Tintilay Raquel</h1>
+                <p>Estudiante de la Ternicatura superior en analisis de sistema y desarrollo de software</p>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html">Intereses</a>
+                <a href="#">Contacto</a>
+                <a href="index.html">Curiosidades</a>
+                <a href="index.html">Proyectos</a>
+            </nav>
+        </header>
+        <main>
+            
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="iname">Nombre: </label>
+                    <input id="iname" type="text" name="name" placeholder="Ingrese su nombre" required minlength="3"><br>
+                    <label for="itelefono">Telefono: </label>
+                    <input id="itelefono" type="tel" name="telefono" pattern="[0-9]{10}" placeholder="Ingrese su número" required><br>
+                    <label for="iemail">Email: </label>
+                    <input id="iemail" type="email" name="email"placeholder="Ingrese su@email.com" required><br>
+                    <label for="imensaje">Mensaje: </label>
+                    <textarea id="imensaje" name="mensaje" required minlength="10"></textarea><br>
+                    <label for="imotivo">Motivo</label>
+                    <select id="imotivo" name="motivo" required>
+                        <option value="" disabled selected>opción</option>
+                        <option value="consulta">consulta</option>
+                        <option value="sugerencia">sugerencia</option>
+                        <option value="otro">otro</option>
+                    </select><br>
+                    <label for="iterminos"><input type="checkbox" id="iterminos" name="terminos" required>Acepto los terminos</label><br>
+                    <button type="submit" value="enviar">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Anto Tintilay</p>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        </footer>
+    </div>
 </body>
