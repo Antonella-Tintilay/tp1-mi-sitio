@@ -38,7 +38,7 @@ h3{
 
 .layout{
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "header header"
@@ -50,6 +50,7 @@ h3{
 header{grid-area: header;}
 
 aside{ grid-area:sidebar;
+    display: none;
     background-color: #f8fafc;
     padding: 20px;
     border-right: 1px solid #d1d5db;
@@ -79,7 +80,8 @@ header {
     flex-wrap:wrap;
 }
 nav {
-    display: flex;  
+    display: flex;
+    flex-wrap:wrap;
 }
 nav a {
     
@@ -173,7 +175,7 @@ button[type="submit"]{
 button:active{
     transform: translateY(2px);
 }
-#intereses h3, #datos h3{
+#intereses h3{
     color: rgba(6, 52, 104, 0.705)
 }
 .cards{
@@ -215,4 +217,48 @@ button:active{
 }
 .cta:hover{
     transform: translateY(-2px);
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    padding: 2rem;
+}
+.tarjeta{
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+    transition: 0.3s ease;
+    background-color: #dde5ee;
+}
+.tarjeta:hover{
+    transform: translateY(-4px);
+}
+
+@media(min-width: 768px){
+    .layout{
+        grid-template-columns: 220px 1fr;
+        grid-template-areas: 
+            "header" 
+            "sider main" 
+            "footer main";
+    }
+    aside{
+        display: block;
+    }
+}
+
+@media (min-width: 1024px){
+    .layout{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px){
+    .layout{
+        max-width: 1400px;
+    }
 }
