@@ -29,6 +29,3 @@ Aprender a usar la terminal es fundamental, aunque tengamos interfaces gráficas
 
 ## Ruta de Git
 /mingw64/bin/git
-
-
-[def]: img/mobile.png
