@@ -186,11 +186,12 @@ button:active{
 }
 .card{
     flex: 1 1 280px;
-    border: 2px solid #121010;
+    border: 1px solid #08286e;
     border-radius: var(--radius);
     transition: 0.3s;
     box-shadow: var(--shadow);
     padding: 1rem;
+    background-color: #b7a8e9;
 }
 .card:hover{
     transform: translateY(-4px);
@@ -226,15 +227,24 @@ button:active{
     padding: 2rem;
 }
 .tarjeta{
-    border: 1px solid #d1d5db;
+    border: 1px solid #08286e;;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 10px rgb(0,0,0,0.1);
     transition: 0.3s ease;
-    background-color: #dde5ee;
+    background-color: #c7cbeb;
 }
 .tarjeta:hover{
     transform: translateY(-4px);
+}
+.fa-html5{
+    color:#d0521c;
+}
+.fa-css3-alt{
+    color:#0551ad;
+}
+.fa-terminal{
+    color:#16a34a;
 }
 
 @media(min-width: 768px){
