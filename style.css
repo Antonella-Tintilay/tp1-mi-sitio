@@ -251,9 +251,9 @@ button:active{
     .layout{
         grid-template-columns: 220px 1fr;
         grid-template-areas: 
-            "header" 
-            "sider main" 
-            "footer main";
+            "header header" 
+            "sidebar main" 
+            "footer footer";
     }
     aside{
         display: block;
